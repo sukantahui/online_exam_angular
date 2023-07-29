@@ -1,0 +1,44 @@
+::ng-deep :root{
+  --bkg: #232946;
+  --dark: #121629;
+  --purple: #b8c1ec;
+  --pink: #eebbc3;
+  --white: #fffffe;
+
+  --huisdom-gradient: linear-gradient(45deg,
+    #f3feca,
+    #fcdeeb,
+    #feebd5,
+    #deffe5
+  );
+}
+.bfc-learning-prg-title {
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 20px;
+  background-image: linear-gradient(to right,#5c72ff,#8c3fff);
+  font-weight: 700;
+  border-radius: 0 0 10px 10px;
+  width: 150px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+element.style {
+}
+.vline {
+  //position: absolute;
+  width: 1px;
+  //height: 130px;
+  //top: 45%;
+  //transform: translateY(-45%);
+  left: 50%;
+  color: #d9d9d9;
+  display: block;
+  box-shadow: #cac6c6 2px 0;
+  background: #fff;
+}
+.whole-div{
+  background-image: var(--huisdom-gradient);
+}

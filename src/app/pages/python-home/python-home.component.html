@@ -1,0 +1,20 @@
+<div class="d-flex">
+    <div class="col-3 p-2 bg-secondary">
+        <h4 class="text-dark text-center text-decoration-underline"><b>Python Tutorial</b></h4>
+        <br>
+        <button type="button" class="btn btn-outline-dark text-light"><b>Introduction</b></button>
+        <br>
+        <a type="button" [routerLink]="['./dataType']" class="btn btn-outline-dark text-light">
+            <b>DataTypes</b>
+        </a>
+        <br>
+        <a type="button" [routerLink]="['./pythonNumber']" class="btn btn-outline-dark text-light">
+            <b>PythonNumber</b>
+        </a>
+        <br>
+    </div>
+    <div claas="col-9">
+        <router-outlet></router-outlet>
+    </div>    
+        
+</div>

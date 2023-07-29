@@ -1,0 +1,152 @@
+<div class="text-center text-light bg-dark"><h3><b>Python Numbers</b></h3></div>
+<br>
+<div class="p-2">
+    There are three numeric types in Python:
+    <br>
+    <br>
+    <ul class="ifc">
+        <li>int</li>
+        <li>float</li>
+        <li>complex</li>
+    </ul>
+    Variables of numeric types are created when you assign a value to them:
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5></tr>
+            <tr>x = 1          #  int</tr>
+            <tr>y = 2.8        #  float</tr>
+            <tr>z = 1j         #  complex</tr>
+        </tbody>
+    </table>
+    To verify the type of any object in Python, use the <code>type()</code> function:
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5></tr>
+            <tr>print ( type ( x ) )</tr>
+            <tr>print ( type ( y ) )</tr>
+            <tr>print ( type ( z ) )</tr>`
+        </tbody>
+    </table>
+</div>
+<div class="p-2">
+    <h4>INT</h4>
+    Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5>Integer</tr>
+            <tr>x = 1</tr>
+            <tr>y = 35656222554887711</tr>
+            <tr>z = -3255522</tr>
+            <tr>print ( type ( x ) )</tr>
+            <tr>print ( type ( y ) )</tr>
+            <tr>print ( type ( z ) )</tr>
+        </tbody>
+    </table>
+</div>
+<div class="p-2">
+    <h4>FLOAT</h4>
+    Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5>Flots</tr>
+            <tr>x = 1.10</tr>
+            <tr>y = 1.0</tr>
+            <tr>z = -35.59</tr>
+            <br>
+            <tr>print ( type ( x ) )</tr>
+            <tr>print ( type ( y ) )</tr>
+            <tr>print ( typr ( z ) )</tr>
+        </tbody>
+    </table>
+    Float can also be scientific numbers with an "e" to indicate the power of 10.
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr><h5 class="back-ground">EXAMPLE</h5></tr>
+            <tr>x = 35e3</tr>
+            <tr>y = 12E4</tr>
+            <tr>z = -87.7e100</tr>
+            <br>
+            print ( type ( x ) )
+            <br>
+            print ( type ( y ) )
+            <br>
+            print ( type ( z ) )
+        </tbody>
+    </table>
+</div>
+<div class="p-2">
+    <h4>COMPLEX</h4>
+    <br>
+    Complex numbers are written with a "j" as the imaginary part:
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5> <h6>Complex</h6></tr>
+            <tr>x = 3+5j</tr>
+            <tr>y = 5j</tr>
+            <tr>z = -5j</tr>
+            <br>
+            <tr>print ( type ( x ) )</tr>
+            <tr>print ( type ( y ) )</tr>
+            <tr>print ( type ( z ) )</tr>
+        </tbody>
+    </table>
+</div>
+<div class="p-2">
+    <h4>TYPE CONVERSION</h4>
+    <br>
+    You can convert from one type to another with the <code>int()</code>, <code>float()</code>, and <code>complex()</code> methods:
+    <br>
+    <br>
+    <table class="table table table-striped" id="random-number">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5>Convert from one type to another:</tr>
+                <tr>x = 1    # int</tr>
+                <tr>y = 2.8  # float</tr>
+                <tr>z = 1j   # complex</tr>
+                <br>
+                <tr>#convert from int to float:</tr>
+                <tr>a = float ( x ) </tr>
+                <br>
+                <tr>#convert from float to int:</tr>
+                <tr>b = int ( y )</tr>
+                <br>
+                <tr>#convert from int to complex:</tr>
+                <tr>c = complex ( x )</tr>
+                <br>
+                <tr>print ( a )</tr>
+                <tr>print ( b )</tr>
+                <tr>print ( c )</tr>
+                <br>
+                <tr>print ( type ( a) )</tr>
+                <tr>print ( type ( b ) )</tr>
+                <tr>print ( type ( c ) )</tr>
+        </tbody>
+    </table>
+</div>
+<div class="p-2">
+    <h4>RANDOM NUMBER</h4>
+    Python does not have a <code>random()</code> function to make a random number, but Python has a built-in module called <code>random</code> that can be used to make random numbers:
+    <br>
+    <br>
+    <table id="random-number" class="table table table-striped">
+        <tbody class="table-type text-center">
+            <tr class="back-ground"><h5>EXAMPLE</h5>Import the random module, and display a random number between 1 and 9:</tr>
+            <tr>import random</tr>
+            <br>
+            <tr>print ( random.randrange (1, 10) )</tr>
+        </tbody>
+    </table>
+</div>
+
