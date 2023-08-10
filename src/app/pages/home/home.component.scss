@@ -12,7 +12,15 @@
     #deffe5
     );
 }
+html {
+  --text-1: var(--gray-9);
+  --text-2: var(--gray-7);
 
+  @media (--OSdark) {
+    --text-1: var(--gray-1);
+    --text-2: var(--gray-2);
+  }
+}
 .header{
     // background-color: #0099ff;
     padding: 0em 1em;
@@ -124,4 +132,22 @@ main {
 }
 .loaded2 {
   animation: var(--animation-slide-in-right) forwards;
+}
+
+.box{
+  /* no radius when fullscreen */
+  height: 40vh;
+  width: 40vh;
+  background-image: var(--gradient-29);
+  border-radius: var(--radius-blob-3);
+  border: var(--border-size-1) solid var(--gray-1);
+  display: flex;
+  justify-content: center;
+}
+.blob img{
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
