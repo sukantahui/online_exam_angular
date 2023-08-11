@@ -136,18 +136,36 @@ main {
 
 .box{
   /* no radius when fullscreen */
-  height: 40vh;
-  width: 40vh;
+  height: max(300px, 20vw);
+  width: max(300px, 20vw);
   background-image: var(--gradient-29);
   border-radius: var(--radius-blob-3);
   border: var(--border-size-1) solid var(--gray-1);
   display: flex;
   justify-content: center;
+  box-shadow: var(--shadow-1);
+  &:hover {
+    box-shadow: var(--shadow-3);
+    background-image: var(--gradient-26);
+  }
 }
-.blob img{
-  height: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.blob {
+    img {
+      height: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    figcaption {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -85%);
+      font-weight: var(--font-weight-7);
+    }
 }
+
+
+
