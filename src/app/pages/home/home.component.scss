@@ -127,28 +127,39 @@ main {
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-2);
 }
-.loaded {
+.loaded-left {
   animation: var(--animation-slide-in-left) forwards;
 }
-.loaded2 {
+.loaded-right {
   animation: var(--animation-slide-in-right) forwards;
 }
-
-.box{
-  /* no radius when fullscreen */
-  height: max(300px, 20vw);
-  width: max(300px, 20vw);
-  background-image: var(--gradient-29);
-  border-radius: var(--radius-blob-3);
-  border: var(--border-size-1) solid var(--gray-1);
-  display: flex;
-  justify-content: center;
-  box-shadow: var(--shadow-1);
-  &:hover {
-    box-shadow: var(--shadow-3);
-    background-image: var(--gradient-26);
-  }
+.blob-radius1{
+  border-radius: var(--radius-blob-4);
+  background-image: var(--gradient-27);
 }
+.blob-radius2{
+  border-radius: var(--radius-blob-2);
+  background-image: var(--gradient-28);
+}
+.blob-radius3{
+  border-radius: var(--radius-blob-3);
+  background-image: var(--gradient-29);
+}
+.box{
+    /* no radius when fullscreen */
+    height: max(200px, 20vw);
+    width: max(200px, 20vw);
+
+
+    border: var(--border-size-1) solid var(--gray-1);
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--shadow-1);
+    &:hover {
+      box-shadow: var(--shadow-3);
+      background-image: var(--gradient-26);
+    }
+  }
 .blob {
     img {
       height: 80%;
@@ -160,9 +171,9 @@ main {
 
     figcaption {
       position: absolute;
-      top: 85%;
+      top: 90%;
       left: 50%;
-      transform: translate(-50%, -85%);
+      transform: translate(-50%, -90%);
       font-weight: var(--font-weight-7);
     }
 }
