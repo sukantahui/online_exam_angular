@@ -5,84 +5,101 @@
   </div>
   <hr style="margin-top: 0px !important; margin-bottom: 2px !important;">
 </section>
-<section id="main-section">
-  <div class="d-flex flex-column" style="min-height: 60vh;">
-    <div class="">
-      <div class="container-fluid rounded d-flex flex-xl-row justify-content-xl-between flex-column">
-        <div *ngIf="sideBarOpen" class="p-2 col-xl-1" style="background-color: rgb(199, 192, 192)">
-          <button mat-mini-fab aria-label="Example icon button with a home icon" (click)="showSideBar=!showSideBar">
-            <mat-icon>home</mat-icon>
-          </button>
-          <ul>
-            <li>
-              <a (click)="subject='Customer Discount'" routerLink='./CustomerDiscountReport'>Customer Discount</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Right -->
-        <div style="width: 100vw;" class="bloc_2 col-xl" >
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-    </div>
-    <!--    Footer area-->
-    <div class="mt-auto p-2 text-center">
-    </div>
+
+
+<div class="d-flex flex-row col-12">
+  <div *ngIf="sideBarOpen" class="col" style="background-image: var(--gradient-15); min-height: 100vh;">
+    <button mat-mini-fab aria-label="Example icon button with a home icon" (click)="showSideBar=!showSideBar">
+      <mat-icon>home</mat-icon>
+    </button>
+    <ul>
+      <li>
+        <a (click)="subject='Customer Discount'" routerLink='./CustomerDiscountReport'>Customer Discount</a>
+      </li>
+    </ul>
   </div>
-</section>
-
-
-<section>
-  <div class="container whole-div text-center shadow p-3 mb-5 bg-white rounded">
-    <div class="mb-3">
-      <span class="mb-3 bfc-learning-prg-title"> class </span>
-    </div>
-    <div class="d-flex flex-sm-row flex-column">
-      <!--      Left-->
-      <div class=" col-xs-12 col-sm-12 col-md-6 col-xl-6">
-        <div  class=" d-flex left-div col-xs-12 col-md-6 col-xl-6 bfc-learning-prg-card">
-          <div class="bfc-left-img-card">
-<!--            <img class="sitting-chair-img" src="assets/images/btla.png" />-->
-          </div>
-          <div class="bfc-right-img-card">
-            <div class="card-body text-center">
-<!--              <img class="card-byjus-logo lazyload"-->
-<!--                   src="https://cdn1.byjus.com/byjusweb/img/home/svg/byjus_learningapp_logo.svg"-->
-<!--                   loading="lazy" />-->
-              <p class="card-text">Personalised learning app <br> to learn
-                anytime, anywhere</p>
-              <a href="/byjus-the-learning-app/" target="_blank"
-                 class="know-more-link">
-                Know more >
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="vline">.</div>
-      <!--      Right-->
-      <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6">
-        <div  class=" d-flex left-div col-xs-12 col-md-6 col-xl-6 bfc-learning-prg-card">
-          <div class="bfc-left-img-card">
-<!--            <img class="sitting-chair-img" src="assets/images/btla.png" />-->
-          </div>
-          <div class="bfc-right-img-card">
-            <div class="card-body text-center">
-<!--              <img class="card-byjus-logo lazyload" src="https://cdn1.byjus.com/byjusweb/img/home/svg/byjus_learningapp_logo.svg" loading="lazy" />-->
-              <p class="card-text">Personalised learning app <br> to learn
-                anytime, anywhere</p>
-              <a href="/byjus-the-learning-app/" target="_blank"
-                 class="know-more-link">
-                Know more >
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Right -->
+  <div *ngIf="mainAreaOpen" style="min-height: 100vh;" class="col router-outlet" >
+    <router-outlet></router-outlet>
   </div>
-</section>
+</div>
+
+<!--<div>-->
+<!--  <div class="d-flex flex-column" style="min-height: 100vh;">-->
+<!--    <div>-->
+<!--      -->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="course-content">
+  <div class="d-flex justify-content-center">
+    <div class="d-flex d-flex justify-content-center circle"> Courses </div>
+  </div>
+  <div class="d-flex bd-highlight mb-3 flex-sm-row flex-column subject-group">
+    <div class="p-2 bd-highlight col course">{{screenWidth}} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1</div>
+    <div class="p-2 bd-highlight col course">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet atque autem consequuntur, culpa cum deserunt doloremque dolorum et fugit, ipsum itaque laborum, officia repudiandae sed soluta tenetur veritatis voluptatum?Flex item 2</div>
+    <div class="p-2 bd-highlight col course">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fugit maiores natus neque quas. Amet architecto atque dignissimos eius eveniet, explicabo facere fuga id incidunt ipsum magnam modi optio quod!Flex item 3</div>
+  </div>
+</div>
+
+
+
+
+    <!--<div>-->
+<!--  <div class="container whole-div text-center shadow p-3 mb-5 bg-white rounded">-->
+<!--    <div class="mb-3">-->
+<!--      <span class="mb-3 bfc-learning-prg-title"> class </span>-->
+<!--    </div>-->
+<!--    <div class="d-flex flex-sm-row flex-column">-->
+<!--      &lt;!&ndash;      Left&ndash;&gt;-->
+<!--      <div class=" col-xs-12 col-sm-12 col-md-6 col-xl-6">-->
+<!--        <div  class=" d-flex left-div col-xs-12 col-md-6 col-xl-6 bfc-learning-prg-card">-->
+<!--          <div class="bfc-left-img-card">-->
+<!--&lt;!&ndash;            <img class="sitting-chair-img" src="assets/images/btla.png" />&ndash;&gt;-->
+<!--          </div>-->
+<!--          <div class="bfc-right-img-card">-->
+<!--            <div class="card-body text-center">-->
+<!--&lt;!&ndash;              <img class="card-byjus-logo lazyload"&ndash;&gt;-->
+<!--&lt;!&ndash;                   src="https://cdn1.byjus.com/byjusweb/img/home/svg/byjus_learningapp_logo.svg"&ndash;&gt;-->
+<!--&lt;!&ndash;                   loading="lazy" />&ndash;&gt;-->
+<!--              <p class="card-text">Personalised learning app <br> to learn-->
+<!--                anytime, anywhere</p>-->
+<!--              <a href="/byjus-the-learning-app/" target="_blank"-->
+<!--                 class="know-more-link">-->
+<!--                Know more >-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="vline">.</div>-->
+<!--      &lt;!&ndash;      Right&ndash;&gt;-->
+<!--      <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6">-->
+<!--        <div  class=" d-flex left-div col-xs-12 col-md-6 col-xl-6 bfc-learning-prg-card">-->
+<!--          <div class="bfc-left-img-card">-->
+<!--&lt;!&ndash;            <img class="sitting-chair-img" src="assets/images/btla.png" />&ndash;&gt;-->
+<!--          </div>-->
+<!--          <div class="bfc-right-img-card">-->
+<!--            <div class="card-body text-center">-->
+<!--&lt;!&ndash;              <img class="card-byjus-logo lazyload" src="https://cdn1.byjus.com/byjusweb/img/home/svg/byjus_learningapp_logo.svg" loading="lazy" />&ndash;&gt;-->
+<!--              <p class="card-text">Personalised learning app <br> to learn-->
+<!--                anytime, anywhere</p>-->
+<!--              <a href="/byjus-the-learning-app/" target="_blank"-->
+<!--                 class="know-more-link">-->
+<!--                Know more >-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
 <!--<section class="services_container">-->
 <!--  <h1 class="head_1">-->
 <!--    Our Services-->

@@ -15,12 +15,18 @@ export class AppComponent {
   showSideBar=true;
 
   sideBarOpen=true;
+  mainAreaOpen=false;
+  screenWidth: number = 0;
+  screenHeight: number = 0;
 
 
   ngOnInit(): void {
+    this.screenWidth = window.innerWidth;
+    this.screenHeight = window.innerHeight;
 
-    
+
     setTimeout(() => {
       this.sideBarOpen=false;
-    }, 3000);
+      this.mainAreaOpen=true;
+    }, 2000);
   }}

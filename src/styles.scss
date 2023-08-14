@@ -3,8 +3,22 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
 
+@import "coder-media-queries";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+html {
+  background: white;
+  color: var(--gray-8);
+}
+body{
+  background-image: var(--gradient-15);
+}
+
+@media (--OSdark) {
+  html {
+    background: var(--gray-9);
+    color: var(--gray-1);
+  }
+}
 
