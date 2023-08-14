@@ -50,8 +50,13 @@ element.style {
 
 
 @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+  //from {background-image: var(--coder-gradient-1);}
+  //to {background-image: var(--coder-gradient-2);}
+  0%   {background-image:var(--coder-gradient-1);}
+  25%  {background-image:var(--coder-gradient-2);}
+  50%  {background-image:var(--coder-gradient-3);}
+  75%  {background-image:var(--coder-gradient-4);}
+  100% {background-image:var(--coder-gradient-5);}
 }
 .circle {
   left: 30%;
@@ -66,7 +71,7 @@ element.style {
   align-items:center;
   justify-content:center;
   animation-name: example;
-  animation-duration: 14s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   &:hover {
     background-image: var(--coder-gradient-1);
@@ -95,6 +100,15 @@ element.style {
   .subject-group > div:nth-child(2){
     border-left: 1px solid white;
     border-right: 1px solid white;
+  }
+  .book-your-class{
+    height: 5vh;
+    width: 20vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-image: var(--gradient-26);
   }
   @include xs {
     background-image: var(--gradient-26);
