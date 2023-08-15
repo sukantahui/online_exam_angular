@@ -13,6 +13,7 @@ import {RouterModule} from "@angular/router";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {HeaderModule} from "./header/header.module";
+import {NgxHideOnScrollModule} from "ngx-hide-on-scroll";
 
 
 
@@ -32,7 +33,8 @@ import {HeaderModule} from "./header/header.module";
         MatButtonModule,
         MatIconModule,
         BrowserAnimationsModule,
-        HeaderModule
+        HeaderModule,
+        NgxHideOnScrollModule
     ],
   providers: [],
   bootstrap: [AppComponent]
