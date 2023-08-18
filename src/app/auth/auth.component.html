@@ -1,7 +1,9 @@
-<div class="col-xl-2 col-xs-12 col-sm-6 " style="margin: auto">
-  <form [formGroup] = loginForm>
+
+  <div class="login-form-boundary">
+    <div class="login-header" style="margin: auto">LOGIN</div>
+    <form [formGroup] = loginForm class="login-form">
     <!-- Email input -->
-    <div class="form-outline mb-4">
+    <div class="form-outline mt-3">
       <input type="email" id="form2Example1"  formControlName="email" class="form-control" />
       <label class="form-label" for="form2Example1">Email address</label>
     </div>
@@ -36,25 +38,10 @@
     <!-- Register buttons -->
     <div class="text-center">
       <p>Not a member? <a href="#!">Register</a></p>
-      <p>or sign up with:</p>
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-facebook-f"></i>
-      </button>
-
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-google"></i>
-      </button>
-
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-twitter"></i>
-      </button>
-
-      <button type="button" class="btn btn-link btn-floating mx-1">
-        <i class="fab fa-github"></i>
-      </button>
     </div>
   </form>
-</div>
+  </div>
+
 
 
 

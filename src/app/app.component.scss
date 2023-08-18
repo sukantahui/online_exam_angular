@@ -1,6 +1,7 @@
 @import 'coder-media-queries';
 @import "coder-gradients";
 ::ng-deep :root{
+
   --bkg: #232946;
   --dark: #121629;
   --purple: #b8c1ec;
@@ -14,6 +15,7 @@
     #deffe5
   );
 }
+
 .bfc-learning-prg-title {
   left: 50%;
   transform: translateX(-50%);
@@ -138,7 +140,11 @@ element.style {
     }
   }
 }
-
+.header-area{
+  position: fixed;
+  z-index: 1000;
+  width:100%;
+}
 .fixed-box{
   position: fixed;
   right: 0;

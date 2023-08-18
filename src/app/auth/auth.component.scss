@@ -1,0 +1,39 @@
+@import 'coder-media-queries';
+@import "coder-gradients";
+.login-form-boundary{
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(100,100,100,.2);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-3);
+  padding: 5px;
+  background-image: var(--gradient-29);
+
+  .login-header{
+    display: table;
+    margin: 0 auto;
+    font-size: 2em;
+
+  }
+  @include xs {
+    width: 80vw;
+  }
+  @include sm {
+    width: 80vw;
+  }
+  @include md {
+    width: 20vw;
+  }
+  @include lg {
+    width: 20vw;
+  }
+  @include xl {
+    width: 15vw;
+  }
+}
+input{
+  caret-color: red;
+}
