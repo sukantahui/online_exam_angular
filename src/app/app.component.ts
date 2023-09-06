@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {CommonService} from "./services/common.service";
 
 
 @Component({
@@ -18,8 +19,11 @@ export class AppComponent {
   mainAreaOpen=false;
   screenWidth: number = 0;
   screenHeight: number = 0;
+  showAppDetails = true;
 
+  constructor(public commonService: CommonService){
 
+  }
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
     this.screenHeight = window.innerHeight;

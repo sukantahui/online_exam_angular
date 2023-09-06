@@ -1,6 +1,6 @@
 
 <section id="header-section">
-  <div class="header-area">
+  <div class="header-area" *ngIf="commonService.getShowAppHeader()">
     <app-header></app-header>
   </div>
   <hr style="margin-top: 0px !important; margin-bottom: 2px !important;">
@@ -31,52 +31,61 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
+<div *ngIf="commonService.getShowAppDetails()">
+  <div class="course-content">
+    <div class="d-flex justify-content-center">
+      <div class="d-flex d-flex justify-content-center circle"> programming </div>
+    </div>
+    <div class="d-flex bd-highlight mb-3 flex-sm-row flex-column subject-group">
 
-<div class="course-content">
-  <div class="d-flex justify-content-center">
-    <div class="d-flex d-flex justify-content-center circle"> programming </div>
+      <div class="p-2 d-flex flex-sm-row flex-column bd-highlight col course">
+        <div class="col-sm-10 col-lg-6 p-0">
+          <img src="../assets/images/education1.png">
+        </div>
+        <div class="col-sm-10 col-lg-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1
+        </div>
+      </div>
+
+      <div class="p-2 d-flex flex-sm-row flex-column bd-highlight col course">
+        <div class="col-sm-10 col-lg-6 p-0">
+          <img src="../assets/images/education2.png">
+        </div>
+
+        <div class="col-sm-10 col-lg-6 p-0">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1
+        </div>
+      </div>
+
+      <div class="p-2 d-flex flex-sm-row flex-column bd-highlight col course">
+        <div class="col-sm-10 col-lg-6 p-0">
+          <img src="../assets/images/finance1.png">
+        </div>
+        <div class="col-sm-10 col-lg-6 p-0">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1
+        </div>
+      </div>
+
+    </div>
+
+    <div class="book-your-class d-flex mx-auto my-auto">
+      <a href="#">Book Your Classes</a>
+    </div>
+
   </div>
-  <div class="d-flex bd-highlight mb-3 flex-sm-row flex-column subject-group">
 
-    <div class="p-2 d-flex flex-sm-row flex-column bd-highlight col course">
-      <div class="col-sm-10 col-lg-6 p-0">
-        <img src="../assets/images/education1.png">
-      </div>
-      <div class="col-sm-10 col-lg-6">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1
-      </div>      
-    </div>
 
-    <div class="p-2 d-flex flex-sm-row flex-column bd-highlight col course">
-      <div class="col-sm-10 col-lg-6 p-0">
-        <img src="../assets/images/education2.png">
-      </div>
-
-      <div class="col-sm-10 col-lg-6 p-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1
-      </div>      
-    </div>
-
-    <div class="p-2 d-flex flex-sm-row flex-column bd-highlight col course">
-      <div class="col-sm-10 col-lg-6 p-0">
+  <carousel [loop]="true">
+    <div class="carousel-cell">
         <img src="../assets/images/finance1.png">
-      </div>
-      <div class="col-sm-10 col-lg-6 p-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque eligendi inventore ipsum laudantium minima odit provident quam unde ut? Accusamus aperiam, commodi deleniti id itaque laboriosam quos suscipit velit.Flex item 1
-      </div>
     </div>
-
-  </div>
-
-  <div class="book-your-class d-flex mx-auto my-auto">
-    <a href="#">Book Your Classes</a>
-  </div>
-
-</div>
-
-
-<carousel [loop]="true">
-  <div class="carousel-cell">
+    <div class="carousel-cell">
+      <img src="../assets/images/finance1.png">
+    </div>
+    <div class="carousel-cell">
+      <img src="../assets/images/finance1.png">
+    </div>
+    <div class="carousel-cell">
       <img src="../assets/images/finance1.png">
   </div>
   <div class="carousel-cell">
@@ -87,39 +96,30 @@
   </div>
   <div class="carousel-cell">
     <img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
+  </div>
+  <div class="carousel-cell">
   <img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
+  </div>
+  <div class="carousel-cell">
   <img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
+  </div>
+  <div class="carousel-cell">
+    <img src="../assets/images/finance1.png">
+  </div>
+  <div class="carousel-cell">
   <img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
-<img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
-<img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
+  </div>
+  <div class="carousel-cell">
   <img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
-<img src="../assets/images/finance1.png">
-</div>
-<div class="carousel-cell">
-<img src="../assets/images/finance1.png">
-</div>
-</carousel>
+  </div>
+  </carousel>
 
-<div  class="fixed-box"  ngxHideOnScroll  [propertyUsedToHide]="'transform'"  [valueWhenHidden]="'translateY(0%)'"  [valueWhenShown]="'translateY(100%)'">
-  <a href="#">
-    <i class="bi bi-box-arrow-up" style="font-size: 2rem; color: red;"></i>
-  </a>
+  <div  class="fixed-box"  ngxHideOnScroll  [propertyUsedToHide]="'transform'"  [valueWhenHidden]="'translateY(0%)'"  [valueWhenShown]="'translateY(100%)'">
+    <a href="#">
+      <i class="bi bi-box-arrow-up" style="font-size: 2rem; color: red;"></i>
+    </a>
+  </div>
 </div>
-
 
 
 
