@@ -32,5 +32,5 @@ export class AppComponent {
     setTimeout(() => {
       this.sideBarOpen=false;
       this.mainAreaOpen=true;
-    }, 2000);
+    }, 10);
   }}
