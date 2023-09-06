@@ -8,11 +8,11 @@ import {CommonService} from "../../services/common.service";
 })
 export class KakuComponent implements OnInit{
   constructor(public commonService: CommonService){
-
+    this.commonService.hideAppDetails();
+    this.commonService.hideAppHeader();
   }
 
   ngOnInit(): void {
-    this.commonService.hideAppDetails();
-    this.commonService.hideAppHeader();
+
   }
 }
