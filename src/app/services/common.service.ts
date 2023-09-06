@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CommonService {
-  isShowAppDetails = true;
-  isShowHeader = true;
+  isShowAppDetails = false;
+  isShowHeader = false;
   hideAppDetails(){
     this.isShowAppDetails=false;
   }
