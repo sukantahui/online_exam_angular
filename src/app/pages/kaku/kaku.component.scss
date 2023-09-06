@@ -38,15 +38,15 @@ main {
 }
 .blob-radius1{
   border-radius: var(--radius-blob-4);
-  background-image: var(--gradient-13);
+  background-image: var(--gradient-26);
 }
 .blob-radius2{
   border-radius: var(--radius-blob-2);
-  background-image: var(--gradient-28);
+  background-image: var(--gradient-26);
 }
 .blob-radius3{
   border-radius: var(--radius-blob-3);
-  background-image: var(--gradient-29);
+  background-image: var(--gradient-26);
 }
 .box{
   /* no radius when fullscreen */
@@ -60,7 +60,7 @@ main {
   box-shadow: var(--shadow-6);
   &:hover {
     box-shadow: var(--shadow-4);
-    background-image: var(--gradient-26);
+    background-image: var(--gradient-28);
   }
 }
 .blob {
