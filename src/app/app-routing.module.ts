@@ -7,8 +7,8 @@ import { PythonIntroductionComponent } from './pages/python-home/python-introduc
 import { PythonNumberComponent } from './pages/python-home/python-number/python-number.component';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./pages/kaku/kaku.module').then(m => m.KakuModule) },
-  // { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  // { path: '', loadChildren: () => import('./pages/kaku/kaku.module').then(m => m.KakuModule) },
+  { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   { path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
   { path: 'login', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   { path: 'Python', loadChildren: () => import('./pages/python/python.module').then(m => m.PythonModule) },
@@ -37,7 +37,7 @@ const routes: Routes = [
 
 // @ts-ignore
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash : true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
