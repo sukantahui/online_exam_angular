@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { BijoyaRegistrationService } from 'src/app/services/bijoya-registration.service';
 import { CommonService } from 'src/app/services/common.service';
 
 @Component({
@@ -17,12 +18,15 @@ export class BijoyaRegistrationComponent {
     memberNumber: new FormControl(''),
   });
 
-  constructor(public commonService: CommonService){
+  constructor(public commonService: CommonService, private bijoyaRegistrationService: BijoyaRegistrationService,){
     this.commonService.hideAppDetails();
     this.commonService.hideAppHeader();
   }
   onSubmit(){
     console.log(this.studentForm.value);
+    this.bijoyaRegistrationService.saveStudentdetails(this.studentForm.value).subscribe(response => {
+      
+    });
   }
 
 }
