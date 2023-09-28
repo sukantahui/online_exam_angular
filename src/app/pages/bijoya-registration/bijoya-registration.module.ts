@@ -6,6 +6,7 @@ import { BijoyaRegistrationComponent } from './bijoya-registration.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
+    HttpClientModule
   ]
 })
 export class BijoyaRegistrationModule { }

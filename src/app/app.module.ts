@@ -15,6 +15,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {HeaderModule} from "./header/header.module";
 import {NgxHideOnScrollModule} from "ngx-hide-on-scroll";
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -36,7 +37,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
         BrowserAnimationsModule,
         HeaderModule,
         NgxHideOnScrollModule,
-        IvyCarouselModule
+        IvyCarouselModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,30 @@
+.logo-div {
+    padding-left: 52%;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border-radius: 2%;
+    // background-image: url('/src/assets/images/fuchka.jpg');
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+  }
+  
+  legend {
+    background-color: rgba(213, 6, 6, 0.272);
+    border-radius: 2%;
+
+    color: white;
+    padding: 5px 10px;
+  }
+
+  mat-form-field{
+    background: none;
+  }
+
+@media (max-width: 600px) {
+    .logo-div {
+        padding-left: 42%;
+    }
+}
