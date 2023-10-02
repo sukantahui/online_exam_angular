@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import {environment} from '../../environments/environment';
+import {environment} from "../../environments/environment";
+
 
 
 @Injectable({
@@ -14,7 +15,7 @@ export class CommonService {
   actual_base_api_url="";
   private actual_base_public_url: string;
   private BASE_PUBLIC_URL=environment.BASE_PUBLIC_URL;
-
+  isDevelopment = environment.isDevelopment;
   hideAppDetails(){
     this.isShowAppDetails=false;
   }
@@ -43,6 +44,7 @@ export class CommonService {
     this.actual_base_public_url = (firstArray[0]+"//"+secondArray[0]+this.BASE_PUBLIC_URL);
    }
    getAPI(){
+    console.log(this.isDevelopment);
     return this.actual_base_api_url;
   }
 }
