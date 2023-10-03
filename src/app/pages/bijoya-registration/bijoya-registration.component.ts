@@ -24,6 +24,7 @@ export class BijoyaRegistrationComponent {
     whatsappNumber: new FormControl(null),
     email: new FormControl(null),
     memberNumber: new FormControl(1, [Validators.required]),
+    foodHabit: new FormControl(1, [Validators.required]),
   });
 
   msgs: { severity: string; summary: string; detail: string }[] = [];
