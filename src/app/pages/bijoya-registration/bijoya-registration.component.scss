@@ -12,10 +12,10 @@ fieldset {
   }
   
   legend {
-    background-color: rgba(83 237 100 / 27%);
+    background-color: rgb(83, 83, 237);
     border-radius: 2%;
 
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 10px;
 
     
@@ -25,8 +25,33 @@ fieldset {
     background: none;
   }
 
-@media (max-width: 600px) {
-    .logo-div {
-        padding-left: 42%;
+  #blink-div{
+    font-weight: bold;
+    padding: 8px;
+    font-size: 24px;
+    font-family: serif;
+    color: #87ff9c;
+    text-align: center;
+    animation: animate 
+        1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
+
+// @media (max-width: 600px) {
+//     .logo-div {
+//         padding-left: 42%;
+//     }
+// }
