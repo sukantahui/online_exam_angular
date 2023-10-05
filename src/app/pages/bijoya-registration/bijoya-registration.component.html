@@ -79,6 +79,41 @@
               <mat-label>Member Number</mat-label>
               <input matInput formControlName="memberNumber">
             </mat-form-field>
+            <!-- <div style="display: flex; justify-content: center;"> -->
+              <!-- <span class="m-2"><b>Select Your Food Habbit:-</b></span> -->
+              <!-- <div > -->
+                <!-- <input formControlName="foodHabit" class="m-2" type="checkbox" name="test" [checked]="food[0]" value="food[0]" (click)="selectCheckBox()">Veg
+              </div>{{food[0]}} -->
+              <!-- <div >
+                <input formControlName="foodHabit" class="m-2" type="checkbox" name="test" [checked]="non-veg" (click)="selectCheckBox(non-veg)">Nonveg
+              </div>
+              <div>
+                <input formControlName="foodHabit" class="m-2" type="checkbox" name="test" [checked]="semi"  (click)="selectCheckBox(semi)">Semi
+              </div> -->
+              
+              <!-- <br>  -->
+              
+              <!-- <br>  -->
+              
+            <!-- </div> -->
+
+            <mat-form-field class="p-2">
+              <mat-label>Food Habit</mat-label>
+              <input matInput formControlName="foodHabit">
+              <mat-hint align="end">
+                Like:- Veg, Non-veg, Semi
+              </mat-hint>
+            </mat-form-field>
+
+            
+            <hr>
+            
+            
+
+            <div class="" style="color: rgb(0, 0, 0);">
+              <input class="p-1" style="border: 1px solid black; margin-right: 4px;" class="form-check-input" type="checkbox" #check1 name="option1" value="something" unchecked>
+              <label class="">Yes, I promise that I'll attend that day</label>
+            </div>
 
             <div style="text-align: center;">
               <button type="button" class="btn btn-primary" mat-button color="light"

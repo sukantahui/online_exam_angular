@@ -4,6 +4,9 @@ import { BijoyaRegistrationService } from 'src/app/services/bijoya-registration.
 import { CommonService } from 'src/app/services/common.service';
 import Swal from 'sweetalert2';
 
+// enum CheckBoxType { VEG, NONVEG, SEMI, NONE };
+
+
 // import { ConfirmationService, MessageService } from 'primeng/api';
 
 
@@ -14,9 +17,17 @@ import Swal from 'sweetalert2';
 })
 export class BijoyaRegistrationComponent {
 
+  
+ 
+
   bijoyaFormShow= true;  
   saveStudentInfo: any;
 
+  // food_habit = CheckBoxType;
+
+  // currentlyChecked: CheckBoxType | undefined;
+
+  food = ["veg", "non-veg", "semi"];
 
   studentForm = new FormGroup({
     studentName: new FormControl(null, [Validators.required, Validators.minLength(5)]),
@@ -24,7 +35,7 @@ export class BijoyaRegistrationComponent {
     whatsappNumber: new FormControl(null),
     email: new FormControl(null),
     memberNumber: new FormControl(1, [Validators.required]),
-    foodHabit: new FormControl(1, [Validators.required]),
+    foodHabit: new FormControl(null, [Validators.required]),
   });
 
   msgs: { severity: string; summary: string; detail: string }[] = [];
@@ -52,8 +63,8 @@ export class BijoyaRegistrationComponent {
     // });
 
     Swal.fire({
-      title: 'Are you sure to save the details?',
-      text: ' Save This Record...?',
+      title: 'Do you want to Register?',
+      text: ' ...Yes I am comming...',
       icon: 'question',
       showCancelButton: true,
       confirmButtonText: 'Yes, Save it!',
@@ -83,6 +94,18 @@ export class BijoyaRegistrationComponent {
     });
 
     
+  }
+  
+  selectCheckBox() {
+    // If the checkbox was already checked, clear the currentlyChecked variable
+
+    // if(this.currentlyChecked === targetType) {
+    //   this.currentlyChecked = CheckBoxType.NONE;
+    //   return;
+    // }
+
+    // this.currentlyChecked = targetType;
+    console.log(this.studentForm.value);
   }
 
   // showSuccess(successMessage: string) {
