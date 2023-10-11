@@ -1,3 +1,15 @@
+@import "coder-gradients";
+
+#outer-div{
+  margin-top: 60px;
+}
+#right-content-area{
+  background-image: var(--coder-gradient-3);
+}
+
+
+
+
 .list-group > .list-group {
     display: none;
     margin-bottom: 0;
@@ -5,16 +17,16 @@
   .list-group-item:focus-within + .list-group {
     display: block;
   }
-  
+
   .list-group > .list-group-item {
     border-radius: 0;
     border-width: 1px 0 0 0;
   }
-  
+
   .list-group > .list-group-item:first-child {
     border-top-width: 0;
   }
-  
+
   .list-group  > .list-group > .list-group-item {
     padding-left: 2.5rem;
   }
@@ -24,29 +36,29 @@
   .just-padding {
     padding: 15px;
   }
-  
+
   .list-group.list-group-root {
     padding: 0;
     overflow: hidden;
   }
-  
+
   .list-group.list-group-root .list-group {
     margin-bottom: 0;
   }
-  
+
   .list-group.list-group-root .list-group-item {
     border-radius: 0;
     border-width: 1px 0 0 0;
   }
-  
+
   .list-group.list-group-root > .list-group-item:first-child {
     border-top-width: 0;
   }
-  
+
   .list-group.list-group-root > .list-group > .list-group-item {
     padding-left: 30px;
   }
-  
+
   .list-group.list-group-root > .list-group > .list-group > .list-group-item {
     padding-left: 45px;
   }

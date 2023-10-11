@@ -25,13 +25,11 @@ const routes: Routes = [
   { path: 'Practice', loadChildren: () => import('./pages/practice/practice.module').then(m => m.PracticeModule) },
   { path: 'PythonTutorial', loadChildren: () => import('./pages/tutorial/python-tutorial/python-tutorial.module').then(m => m.PythonTutorialModule) },
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
-  { path: 'pythonTuples', loadChildren: () => import('./pages/tutorial/python-tutorial/python-tuples/python-tuples.module').then(m => m.PythonTuplesModule) },
   { path: 'courses', loadChildren: () => import('./pages/courses/courses.module').then(m => m.CoursesModule) },
   { path: 'kaku', loadChildren: () => import('./pages/kaku/kaku.module').then(m => m.KakuModule) },
-
   { path: 'huisdom', loadChildren: () => import('./pages/huisdom/huisdom.module').then(m => m.HuisdomModule) },
-
   { path: 'bijoyaRegistration', loadChildren: () => import('./pages/bijoya-registration/bijoya-registration.module').then(m => m.BijoyaRegistrationModule) },
+
   // { path: 'python', loadChildren: () => import('./pages/courses/python/python.module').then(m => m.PythonModule) },
   // { path: 'PythonTutorialIntroduction', loadChildren: () => import('./pages/tutorial/python-tutorial/python-tutorial-introduction/python-tutorial-introduction.module').then(m => m.PythonTutorialIntroductionModule) },
 
