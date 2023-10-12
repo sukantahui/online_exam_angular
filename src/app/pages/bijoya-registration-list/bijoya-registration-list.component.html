@@ -1,0 +1,26 @@
+<div style="padding-top: 70px;">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Whatsapp Number</th>
+            <th scope="col">Email Id</th>
+            <th scope="col">No. of Member</th>
+            <th scope="col">Food Habbit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let st of studentList; let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{st.student_name}}</td>
+            <td>{{st.contact_number}}</td>
+            <td>{{st.whatsapp_number}}</td>
+            <td>{{st.email_id}}</td>
+            <td>{{st.number_of_member}}</td>
+            <td>{{st.food_habit}}</td>
+          </tr>          
+        </tbody>
+      </table>
+</div>

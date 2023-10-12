@@ -17,4 +17,11 @@ export class BijoyaRegistrationService {
       
    }))
   }
+
+  fetchAllStudentInfo(){
+    return this.http.get<any>(this.commonService.getAPI() + '/dev/bijoyaRegistrationForm')
+    .pipe(catchError(this.errorService.serverError),tap(response =>{
+      // this.studentInfo = response.data;
+    }));
+  }
 }

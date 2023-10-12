@@ -1,9 +1,14 @@
 ::ng-deep:root {
+
+  --coder-gradient-01: linear-gradient(to right top, #ffffff, #fefefe, #fcfcfc, #fbfbfb, #faf9f9, #faf9f9, #faf9f9, #faf9f9, #fbfbfb, #fcfcfc, #fefefe, #ffffff);
   --coder-gradient-1:  linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  --coder-gradient-2: linear-gradient(to right top, #60314c, #5b3755, #543d5d, #4d4362, #474865, #434e6a, #3f546e, #3c5a71, #396377, #386d7a, #3c767b, #457e7a);
+  --coder-gradient-2:  linear-gradient(to right top, #60314c, #5b3755, #543d5d, #4d4362, #474865, #434e6a, #3f546e, #3c5a71, #396377, #386d7a, #3c767b, #457e7a);
   --coder-gradient-3:  radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   --coder-gradient-4:  linear-gradient(to left, #340d23, #591b2a, #7b3229, #925121, #9c7518, #af7f1d, #c28a23, #d69429, #fd7e50, #ff6c85, #ff6ec1, #d685f9);
-  --coder-gradient-5:   linear-gradient(to left, #eba1ca, #f996aa, #fa9184, #eb955d, #cd9e3d, #c3a73c, #b8b03e, #abb844, #bfc354, #d3ce64, #e6d974, #f9e585);
+  --coder-gradient-5:  linear-gradient(to left, #eba1ca, #f996aa, #fa9184, #eb955d, #cd9e3d, #c3a73c, #b8b03e, #abb844, #bfc354, #d3ce64, #e6d974, #f9e585);
+  --coder-gradient-6:  linear-gradient(to right top, #ffffff, #fff9fe, #fff1f5, #ffebe5, #ffe9d3, #f0e4c7, #dfdfbe, #cbdab9, #b4cbb4, #a2bbad, #94aaa4, #8a9998);
+  --coder-gradient-7:  linear-gradient(to right top, #ffffff, #e8e7e8, #d2cfd0, #bcb8b7, #a6a29f, #9d9a96, #93928d, #888b85, #898f89, #89928d, #899692, #8a9998);
+
 }
 //https://mycolor.space/gradient3
 
