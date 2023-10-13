@@ -34,6 +34,7 @@ const routes: Routes = [
 
 
 
+
   // { path: 'python', loadChildren: () => import('./pages/courses/python/python.module').then(m => m.PythonModule) },
   // { path: 'PythonTutorialIntroduction', loadChildren: () => import('./pages/tutorial/python-tutorial/python-tutorial-introduction/python-tutorial-introduction.module').then(m => m.PythonTutorialIntroductionModule) },
 

@@ -5,6 +5,7 @@ import { DataStructureTutorialComponent } from './data-structure-tutorial.compon
 const routes: Routes = [{ path: '', component: DataStructureTutorialComponent,
   children: [
     { path: '', loadChildren: () => import('./data-structure-introduction/data-structure-introduction.module').then(m => m.DataStructureIntroductionModule) },
+    { path: 'BinaryTree', loadChildren: () => import('./binary-tree-tutorial/binary-tree-tutorial.module').then(m => m.BinaryTreeTutorialModule) },
     { path: 'GraphTutorial', loadChildren: () => import('./graph-tutorial/graph-tutorial.module').then(m => m.GraphTutorialModule) },
   ]
 }];
