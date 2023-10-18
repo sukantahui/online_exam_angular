@@ -115,4 +115,10 @@ export class BijoyaRegistrationComponent {
   //   this.messageService.add({ severity: 'error', summary: 'Success', detail: message });
   // }
 
+
+  addWhatsappNumber(contactNumber: string){
+    // @ts-ignore
+    this.studentForm.get('whatsappNumber').setValue(contactNumber);
+  }
+
 }

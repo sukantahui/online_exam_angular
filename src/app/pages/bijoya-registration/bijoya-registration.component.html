@@ -45,7 +45,7 @@
                             hintLabel="Contact number is required.">
               <mat-label> <i class="bi bi-telephone-fill mr-1"></i>Contact Number</mat-label>
               <input placeholder="Enter Your Contact Number" matInput
-                     formControlName="contactNumber" value>
+                     formControlName="contactNumber" #contactNumber value>
               <mat-error *ngIf="studentForm.controls['contactNumber'].errors">
                 <mat-error
                   *ngIf="studentForm.controls['contactNumber'].errors['required']">
@@ -53,6 +53,10 @@
                 </mat-error>
               </mat-error>
             </mat-form-field>
+            <div align="end">
+              <i class="bi bi-whatsapp m-2" (click)="addWhatsappNumber(contactNumber.value)">add numbers to whatsapp</i>
+              <!-- <i class="bi bi-telegram" (click)="addTelegramNumber(contactNumber.value)"></i> -->
+          </div>
 
             <!-- <mat-form-field  class="p-2">
               <mat-label>Student Name</mat-label>
