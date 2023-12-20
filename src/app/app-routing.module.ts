@@ -32,6 +32,7 @@ const routes: Routes = [
   { path: 'bijoyaRegistrationList', loadChildren: () => import('./pages/bijoya-registration-list/bijoya-registration-list.module').then(m => m.BijoyaRegistrationListModule) },
   { path: 'dsat', loadChildren: () => import('./pages/tutorial/data-structure-tutorial/data-structure-tutorial.module').then(m => m.DataStructureTutorialModule) },
   { path: 'aboutCoderBijoya', loadChildren: () => import('./pages/about-coder-bijoya/about-coder-bijoya.module').then(m => m.AboutCoderBijoyaModule) },
+  { path: 'HappyBirthday', loadChildren: () => import('./pages/happy-birthday/happy-birthday.module').then(m => m.HappyBirthdayModule) },
 
 
 
