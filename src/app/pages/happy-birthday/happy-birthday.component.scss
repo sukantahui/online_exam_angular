@@ -16,3 +16,11 @@ h1 {
   -webkit-user-select: none;
   user-select: none;
 }
+
+.hover-dim {
+  opacity: 1;
+  &:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+  }
+}

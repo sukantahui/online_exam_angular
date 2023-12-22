@@ -5,13 +5,14 @@ import { HappyBirthdayRoutingModule } from './happy-birthday-routing.module';
 import { HappyBirthdayComponent } from './happy-birthday.component';
 
 
+
 @NgModule({
   declarations: [
     HappyBirthdayComponent
   ],
   imports: [
     CommonModule,
-    HappyBirthdayRoutingModule
+    HappyBirthdayRoutingModule,
   ]
 })
 export class HappyBirthdayModule { }
