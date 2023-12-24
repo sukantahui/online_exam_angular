@@ -84,7 +84,13 @@ background-image: var(--gradient-29);
 min-height: 100vh;
 }
 #birthday-container{
-  background-color: rgb(226, 182, 204);
+  background-color: rgb(117 71 51);
+  padding: 50px;
+  color: white;
+}
+
+#myImage{
+  cursor: pointer;
 }
 
 
