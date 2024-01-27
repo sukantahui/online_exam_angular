@@ -33,6 +33,7 @@ const routes: Routes = [
   { path: 'dsat', loadChildren: () => import('./pages/tutorial/data-structure-tutorial/data-structure-tutorial.module').then(m => m.DataStructureTutorialModule) },
   { path: 'aboutCoderBijoya', loadChildren: () => import('./pages/about-coder-bijoya/about-coder-bijoya.module').then(m => m.AboutCoderBijoyaModule) },
   { path: 'HappyBirthday', loadChildren: () => import('./pages/happy-birthday/happy-birthday.module').then(m => m.HappyBirthdayModule) },
+  { path: 'examEntry', loadChildren: () => import('./pages/exam-entry/exam-entry.module').then(m => m.ExamEntryModule) },
 
 
 
