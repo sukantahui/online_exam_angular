@@ -21,8 +21,10 @@ main {
   justify-content: center;
   //max-inline-size: calc(var(--size-content-1) * 4);
   margin-inline: auto;
-  gap: var(--size-5);
+  // gap: var(--size-5);
   //padding: var(--size-5);
+  color: #ffffff;
+  text-shadow: -2px 0px 0px #50505070, 0px 1px 0px #5252522b;
 }
 
 
@@ -86,5 +88,20 @@ main {
 }
 
 
+.courses{
+  background-color: #9ebdff;
+
+}
+.teachers{
+  background-color: #a6b0ee;
 
 
+}
+// .info{
+//   background: url(../../../assets/images/dragon-scales\ \(1\).svg);
+// }
+.doodles{
+  background-image: url(../../../assets/images/dragon-scales.svg) ;
+  background-position: center;
+  background-repeat: repeat;
+}
