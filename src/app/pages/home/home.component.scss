@@ -105,3 +105,21 @@ main {
   background-position: center;
   background-repeat: repeat;
 }
+
+.box2{
+  /* no radius when fullscreen */
+  height: max(100px, 10vw);
+  width: max(100px, 10vw);
+  margin: 5px;
+
+
+  border: var(--border-size-1) solid var(--gray-1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--shadow-6);
+  // &:hover {
+  //   box-shadow: var(--shadow-4);
+  //   background-image: var(--gradient-26);
+  // }
+}

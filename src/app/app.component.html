@@ -31,8 +31,8 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-<div *ngIf="commonService.getShowAppDetails()">
-  <div class="course-content">
+<div *ngIf="commonService.getShowAppDetails()" class="w-100">
+  <div class="course-content w-100">
     <div class="d-flex justify-content-center">
       <div class="d-flex d-flex justify-content-center circle"> programming </div>
     </div>
@@ -73,10 +73,18 @@
     </div>
 
   </div>
-
-
-  <carousel [loop]="true">
-    <div class="carousel-cell">
+  <div>
+    <carousel [loop]="true">
+      <div class="carousel-cell">
+          <img src="../assets/images/finance1.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="../assets/images/finance1.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="../assets/images/finance1.png">
+      </div>
+      <div class="carousel-cell">
         <img src="../assets/images/finance1.png">
     </div>
     <div class="carousel-cell">
@@ -87,32 +95,24 @@
     </div>
     <div class="carousel-cell">
       <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
+    </div>
+    <div class="carousel-cell">
     <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
+    </div>
+    <div class="carousel-cell">
     <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
+    </div>
+    <div class="carousel-cell">
+      <img src="../assets/images/finance1.png">
+    </div>
+    <div class="carousel-cell">
     <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
-  <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
-  <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
+    </div>
+    <div class="carousel-cell">
     <img src="../assets/images/finance1.png">
+    </div>
+    </carousel>
   </div>
-  <div class="carousel-cell">
-  <img src="../assets/images/finance1.png">
-  </div>
-  <div class="carousel-cell">
-  <img src="../assets/images/finance1.png">
-  </div>
-  </carousel>
 
   <div  class="fixed-box"  ngxHideOnScroll  [propertyUsedToHide]="'transform'"  [valueWhenHidden]="'translateY(0%)'"  [valueWhenShown]="'translateY(100%)'">
     <a href="#">
