@@ -24,32 +24,10 @@ main {
   // gap: var(--size-5);
   //padding: var(--size-5);
   color: #ffffff;
-  text-shadow: -2px 0px 0px #50505070, 0px 1px 0px #5252522b;
 }
 
 
-.loaded-left {
-  animation:
-    var(--animation-slide-in-left) forwards,
-    var(--animation-slide-out-down);
-  animation-timing-function: var(--ease-squish-3);
-  animation-duration: 2s;
-}
-.loaded-right {
-  animation: var(--animation-slide-in-right) forwards;
-}
-.blob-radius1{
-  border-radius: var(--radius-blob-4);
-  background-image: var(--gradient-13);
-}
-.blob-radius2{
-  border-radius: var(--radius-blob-2);
-  background-image: var(--gradient-28);
-}
-.blob-radius3{
-  border-radius: var(--radius-blob-3);
-  background-image: var(--gradient-29);
-}
+
 .box{
     /* no radius when fullscreen */
     height: max(200px, 20vw);
@@ -100,11 +78,7 @@ main {
 // .info{
 //   background: url(../../../assets/images/dragon-scales\ \(1\).svg);
 // }
-.doodles{
-  background-image: url(../../../assets/images/dragon-scales.svg) ;
-  background-position: center;
-  background-repeat: repeat;
-}
+
 
 .box2{
   /* no radius when fullscreen */
@@ -123,3 +97,4 @@ main {
   //   background-image: var(--gradient-26);
   // }
 }
+

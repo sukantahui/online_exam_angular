@@ -29,8 +29,6 @@
 }
 
 
-element.style {
-}
 .vline {
   //position: absolute;
   width: 1px;
@@ -80,22 +78,6 @@ element.style {
     box-shadow: var(--shadow-3);
   }
 }
-//.course-content{
-//  width: max(370px, 80vw);
-//  background-image: var(--gradient-15);
-//  margin: auto;
-//  .course{
-//    //border: 1px solid white;
-//    border-top: 1px solid white;
-//
-//  }
-//}
-
-//320px — 480px: Mobile devices
-//481px — 768px: iPads, Tablets
-//769px — 1024px: Small screens, laptops
-//1025px — 1200px: Desktops, large screens
-//1201px and more —  Extra large screens, TV
 
 .course-content {
   padding-bottom: 10px;

@@ -11,9 +11,6 @@ html {
   background: white;
   color: var(--gray-8);
 }
-body{
-  background-image: var(--gradient-15);
-}
 
 @media (--OSdark) {
   html {
@@ -22,3 +19,19 @@ body{
   }
 }
 
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
